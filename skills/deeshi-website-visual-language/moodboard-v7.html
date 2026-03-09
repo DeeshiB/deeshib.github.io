@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deeshi — Moodboard v7 — Combined</title>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Mono:wght@400;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&family=Martel:wght@400;600;700;900&family=Yatra+One&family=Khand:wght@400;600;700&family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#2a2520;
+  --ink-80:rgba(42,37,32,0.80);
+  --ink-60:rgba(42,37,32,0.60);
+  --ink-40:rgba(42,37,32,0.40);
+  --ink-20:rgba(42,37,32,0.20);
+  --ink-10:rgba(42,37,32,0.10);
+  --cream:#f7f3ec;
+  --cream-dark:#ece5d8;
+
+  --haldi:#d49520;
+  --haldi-light:rgba(212,149,32,0.12);
+  --haldi-glow:rgba(212,149,32,0.30);
+  --kumkum:#c25040;
+  --kumkum-light:rgba(194,80,64,0.10);
+  --neel:#16606e;
+  --neel-light:rgba(22,96,110,0.08);
+  --mitti:#a87d56;
+  --mitti-light:rgba(168,125,86,0.12);
+  --mehendi:#4d7a53;
+  --chandan:#e8dcc8;
+  --sindoor:#b83228;
+
+  --serif:'Crimson Pro',Georgia,serif;
+  --hand:'Kalam',cursive;
+  --mono:'IBM Plex Mono',monospace;
+  --deva:'Baloo 2',sans-serif;
+  --deva-serif:'Baloo 2',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--serif);color:var(--ink);line-height:1.65;
+  background:var(--cream);min-height:100vh;
+  position:relative;overflow-x:hidden;font-size:17px;
+}
+
+/* ===== KOLAM LEFT BORDER ===== */
+body::before{
+  content:'';position:fixed;left:0;top:0;bottom:0;width:48px;
+  background:
+    radial-gradient(circle at 24px 40px, var(--haldi) 3px, transparent 3px),
+    radial-gradient(circle at 24px 80px, var(--kumkum) 2.5px, transparent 2.5px),
+    radial-gradient(circle at 24px 120px, var(--haldi) 3px, transparent 3px),
+    radial-gradient(circle at 24px 160px, var(--neel) 2.5px, transparent 2.5px),
+    radial-gradient(circle at 24px 200px, var(--haldi) 3px, transparent 3px),
+    radial-gradient(circle at 24px 240px, var(--kumkum) 2.5px, transparent 2.5px),
+    radial-gradient(circle at 24px 280px, var(--haldi) 3px, transparent 3px),
+    radial-gradient(circle at 24px 320px, var(--neel) 2.5px, transparent 2.5px),
+    radial-gradient(circle at 24px 360px, var(--haldi) 3px, transparent 3px),
+    radial-gradient(circle at 24px 400px, var(--kumkum) 2.5px, transparent 2.5px),
+    radial-gradient(circle at 12px 60px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 36px 60px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 12px 140px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 36px 140px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 12px 220px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 36px 220px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 12px 300px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 36px 300px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 12px 380px, var(--ink-10) 2px, transparent 2px),
+    radial-gradient(circle at 36px 380px, var(--ink-10) 2px, transparent 2px);
+  background-size:48px 400px;
+  opacity:0.6;z-index:10;pointer-events:none;
+}
+
+/* ===== SHELL ===== */
+.shell{
+  max-width:960px;margin:0 auto;padding:48px 32px 80px 72px;position:relative;
+  background-image:
+    radial-gradient(ellipse at 10% 5%, var(--haldi-light) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 20%, var(--kumkum-light) 0%, transparent 35%),
+    radial-gradient(ellipse at 50% 50%, var(--mitti-light) 0%, transparent 40%),
+    radial-gradient(ellipse at 80% 85%, var(--neel-light) 0%, transparent 35%);
+}
+
+/* ===== INTRO ===== */
+.intro{padding:24px 0 32px;position:relative;overflow:hidden}
+.d-mark{display:inline-flex;align-items:center;gap:4px;margin-bottom:12px}
+.d-mark .d-circle{
+  width:38px;height:38px;border-radius:50%;border:2.5px solid var(--ink);
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--deva-serif);font-size:20px;font-weight:600;
+}
+.d-mark .d-arrow{font-size:20px;color:var(--kumkum);font-weight:700;margin-left:-2px}
+.deva-hello{font-family:var(--deva-serif);font-size:28px;color:var(--haldi);display:block;margin-bottom:4px}
+.intro h1{
+  font-family:var(--serif);font-size:clamp(32px,5vw,52px);font-weight:700;
+  line-height:1.1;margin-bottom:16px;letter-spacing:-0.5px;
+}
+.intro h1 .hi-deeshi{
+  font-family:var(--hand);font-weight:400;font-size:0.48em;
+  color:var(--haldi);display:block;transform:rotate(-1.5deg);
+  margin-bottom:6px;letter-spacing:0;
+}
+.intro .sub{
+  font-size:18px;font-style:italic;color:var(--ink-80);max-width:580px;line-height:1.7;
+}
+.intro .sub em{font-style:normal;color:var(--ink);font-weight:600}
+.culture-anchor{
+  margin-top:20px;padding:20px 0 20px 22px;position:relative;max-width:560px;
+}
+.culture-anchor::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(to bottom, var(--haldi), var(--kumkum), var(--neel));
+  border-radius:2px;
+}
+.culture-anchor p{font-size:16px;line-height:1.75;color:var(--ink-80)}
+.culture-anchor strong{color:var(--ink)}
+
+/* ===== INTRO FULL / COMPACT STATES ===== */
+.intro-full{
+  transition:opacity 0.35s ease, max-height 0.45s ease;
+  max-height:800px;opacity:1;
+}
+.intro-compact{
+  display:flex;align-items:center;gap:14px;cursor:pointer;
+  max-height:0;opacity:0;overflow:hidden;
+  transition:opacity 0.35s ease 0.1s, max-height 0.45s ease;
+}
+.intro-compact .d-mark{margin-bottom:0}
+.intro-compact .d-mark .d-circle{width:32px;height:32px;font-size:17px}
+.intro-compact .d-mark .d-arrow{font-size:17px}
+.intro-compact .compact-name{
+  font-family:var(--hand);font-size:22px;color:var(--ink);font-weight:700;
+}
+.intro-compact .compact-deva{
+  font-family:var(--deva-serif);font-size:16px;color:var(--haldi);margin-left:6px;
+}
+.intro-compact .compact-sep{
+  width:1.5px;height:24px;background:var(--ink-20);flex-shrink:0;
+}
+.intro-compact .compact-tagline{
+  font-family:var(--serif);font-size:15px;color:var(--ink-60);font-style:italic;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.intro-compact:hover .compact-name{color:var(--haldi)}
+
+/* Shrunk state */
+.intro.shrunk .intro-full{
+  max-height:0;opacity:0;overflow:hidden;pointer-events:none;
+}
+.intro.shrunk .intro-compact{
+  max-height:80px;opacity:1;
+}
+.intro.shrunk{padding:16px 0 12px}
+
+/* ===== DIRECTION TABS ===== */
+.dir-tabs{
+  display:flex;gap:0;margin:24px 0 0;
+  border-bottom:2px solid var(--ink-20);flex-wrap:wrap;
+}
+.dir-tab{
+  font-family:var(--mono);font-size:12px;
+  padding:10px 18px;cursor:pointer;color:var(--ink-40);
+  border-bottom:2.5px solid transparent;margin-bottom:-2px;
+  transition:all 0.3s;background:none;border-top:none;border-left:none;border-right:none;
+  letter-spacing:0.5px;
+}
+.dir-tab:hover{color:var(--ink-60)}
+.dir-tab.active{color:var(--ink);border-bottom-color:var(--haldi);font-weight:600}
+.dir-tab .tab-deva{font-family:var(--deva);font-size:13px;margin-right:6px;opacity:0.6}
+
+/* ===== PANELS ===== */
+.dir-panel{display:none;padding:36px 0;animation:fadeUp 0.4s ease}
+.dir-panel.visible{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ===== SECTION MARKERS ===== */
+.section-marker{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+.section-marker .sm-hindi{font-family:var(--deva-serif);font-size:20px;color:var(--haldi);font-weight:600}
+.section-marker .sm-english{font-family:var(--hand);font-size:18px;color:var(--ink-60)}
+.section-marker::after{content:'';flex:1;height:1px;background:linear-gradient(to right, var(--haldi-glow), transparent)}
+
+/* Panel headings */
+.panel-h2{
+  font-family:var(--serif);font-size:clamp(24px,3.2vw,32px);font-weight:600;
+  margin-bottom:8px;line-height:1.25;color:var(--ink);
+}
+.panel-sub{font-size:17px;color:var(--ink-80);max-width:640px;line-height:1.75;margin-bottom:24px}
+
+/* Underlines */
+.ul-haldi{text-decoration:underline;text-decoration-color:var(--haldi);text-underline-offset:4px;text-decoration-thickness:2.5px;text-decoration-skip-ink:none}
+
+/* Margin notes */
+.margin-note{
+  font-family:var(--hand);color:var(--kumkum);font-size:18px;
+  position:absolute;transform:rotate(var(--rot, -3deg));line-height:1.3;
+}
+.margin-note-deva{font-family:var(--deva);font-size:14px;color:var(--ink-40);display:block;margin-top:2px}
+
+/* ===== THESIS BLOCK ===== */
+.thesis-block{position:relative;padding:36px 0;margin:20px 0}
+.thesis-block::before,.thesis-block::after{content:'';position:absolute;left:0;right:0;height:1.5px}
+.thesis-block::before{top:0;background:linear-gradient(to right, var(--haldi) 30%, var(--kumkum) 60%, var(--neel))}
+.thesis-block::after{bottom:0;background:linear-gradient(to right, var(--neel) 30%, var(--kumkum) 60%, var(--haldi))}
+.thesis-text{
+  font-family:var(--serif);font-size:clamp(20px,2.8vw,28px);
+  font-weight:300;line-height:1.55;max-width:700px;color:var(--ink);
+}
+.thesis-text strong{font-weight:700}
+.thesis-deva{font-family:var(--deva-serif);font-size:20px;color:var(--haldi);margin-top:14px;display:block}
+.thesis-annotation{font-family:var(--hand);font-size:19px;color:var(--kumkum);margin-top:10px;transform:rotate(-2deg);display:inline-block}
+
+/* ===== CULTURE CONCEPTS ===== */
+.culture-grid{display:flex;flex-wrap:wrap;gap:28px;margin-top:24px}
+.culture-concept{flex:1;min-width:180px;position:relative;padding:0 0 0 18px}
+.culture-concept::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:2.5px;border-radius:1px}
+.culture-concept:nth-child(1)::before{background:var(--haldi)}
+.culture-concept:nth-child(2)::before{background:var(--kumkum)}
+.culture-concept:nth-child(3)::before{background:var(--neel)}
+.culture-concept:nth-child(4)::before{background:var(--mehendi)}
+.cc-deva{font-family:var(--deva-serif);font-size:32px;font-weight:700;color:var(--ink);line-height:1.2}
+.cc-transliterate{font-family:var(--mono);font-size:13px;color:var(--ink-60);letter-spacing:1px;text-transform:uppercase;margin:4px 0 6px}
+.cc-meaning{font-family:var(--serif);font-size:15px;color:var(--ink-80);line-height:1.6}
+.cc-maps-to{font-family:var(--hand);font-size:16px;color:var(--haldi);margin-top:6px}
+
+/* ===== STREAMS ===== */
+.stream-current{position:relative;padding:24px 0 24px 28px;margin-bottom:12px}
+.stream-current::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:2px}
+.stream-lab::before{background:var(--kumkum)}
+.stream-class::before{background:var(--neel)}
+.stream-current .stream-name-deva{font-family:var(--deva-serif);font-size:20px}
+.stream-current .stream-name{font-family:var(--hand);font-size:26px;font-weight:700;margin-bottom:6px}
+.stream-lab .stream-name,.stream-lab .stream-name-deva{color:var(--kumkum)}
+.stream-class .stream-name,.stream-class .stream-name-deva{color:var(--neel)}
+.stream-current .stream-desc{font-size:16px;color:var(--ink-80);margin-bottom:14px;max-width:560px;line-height:1.7}
+.stream-topics{display:flex;flex-wrap:wrap;gap:8px}
+.stream-topic{font-family:var(--mono);font-size:13px;color:var(--ink-60);padding:5px 12px;background:var(--ink-10);border-radius:20px}
+.stream-connector{font-family:var(--hand);font-size:21px;color:var(--haldi);text-align:center;padding:16px 0;transform:rotate(-1deg)}
+
+/* ===== COLORS ===== */
+.color-world{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.color-drop{text-align:center;width:95px}
+.color-blob{
+  width:78px;height:78px;border-radius:50% 45% 55% 48%;margin:0 auto 10px;
+  position:relative;transition:transform 0.3s;cursor:pointer;
+}
+.color-blob:hover{transform:scale(1.12) rotate(5deg)}
+.color-blob .blob-label{
+  position:absolute;bottom:-6px;right:-10px;
+  font-family:var(--deva);font-size:14px;color:var(--ink);font-weight:600;
+  transform:rotate(var(--rot,3deg));white-space:nowrap;
+}
+.color-hindi{font-family:var(--deva);font-size:15px;color:var(--ink);font-weight:500;margin-top:2px}
+.color-english{font-family:var(--mono);font-size:12px;color:var(--ink-60)}
+.color-hex{font-family:var(--mono);font-size:11px;color:var(--ink-40)}
+.color-meaning{font-family:var(--hand);font-size:14px;color:var(--ink-60);margin-top:3px;max-width:95px}
+.color-story{margin-top:28px;line-height:1.85;max-width:640px}
+.color-story p{font-size:16px;color:var(--ink-80);margin-bottom:10px}
+.cs-h{color:var(--haldi);font-weight:600}
+.cs-k{color:var(--kumkum);font-weight:600}
+.cs-n{color:var(--neel);font-weight:600}
+.cs-m{color:var(--mitti);font-weight:600}
+.cs-me{color:var(--mehendi);font-weight:600}
+
+/* ===== TYPEFACE ALTERNATES ===== */
+.type-alt-group{margin-bottom:32px}
+.type-alt-label{
+  font-family:var(--mono);font-size:13px;color:var(--haldi);
+  letter-spacing:1px;text-transform:uppercase;margin-bottom:12px;font-weight:600;
+  display:flex;align-items:center;gap:10px;
+}
+.type-alt-label::after{content:'';flex:1;height:1px;background:var(--haldi-glow)}
+.type-alt-row{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--ink-10)}
+.type-alt-row:last-child{border-bottom:none}
+.type-alt-name{font-family:var(--mono);font-size:13px;color:var(--ink-60);margin-bottom:6px;display:flex;align-items:baseline;gap:8px}
+.type-alt-name .current-badge{font-size:10px;padding:2px 8px;background:var(--haldi-light);color:var(--haldi);border-radius:10px;font-weight:600}
+.type-alt-name .rec-badge{font-size:10px;padding:2px 8px;background:var(--kumkum-light);color:var(--kumkum);border-radius:10px;font-weight:600}
+.type-alt-sample{font-size:clamp(22px,2.8vw,32px);font-weight:700;line-height:1.2;margin-bottom:4px;color:var(--ink)}
+.type-alt-body{font-size:17px;line-height:1.75;color:var(--ink-80);max-width:560px}
+.type-alt-note{font-family:var(--hand);font-size:16px;color:var(--kumkum);margin-top:6px;transform:rotate(-0.5deg);display:inline-block}
+
+/* ===== IA ===== */
+.ia-flow{position:relative}
+.ia-node{position:relative;padding:16px 0 16px 30px;margin-bottom:6px}
+.ia-node::before{content:'';position:absolute;left:6px;top:0;bottom:0;width:1px;background:var(--ink-20)}
+.ia-node::after{content:'';position:absolute;left:0;top:24px;width:14px;height:14px;border-radius:50%}
+.ia-node.ia-home::after{background:var(--haldi)}
+.ia-node.ia-writing::after{background:var(--kumkum)}
+.ia-node.ia-projects::after{background:var(--neel)}
+.ia-node.ia-services::after{background:var(--mitti)}
+.ia-node.ia-about::after{background:var(--mehendi)}
+.ia-page{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
+.ia-page-name{font-family:var(--serif);font-size:19px;font-weight:600}
+.ia-page-deva{font-family:var(--deva);font-size:16px;color:var(--ink-60)}
+.ia-desc{font-size:15px;color:var(--ink-80);max-width:500px;line-height:1.6}
+
+/* ===== POSITIONING ===== */
+.positioning-flow{max-width:560px;margin-top:28px}
+.pos-line{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;font-size:17px}
+.pos-not{font-family:var(--serif);color:var(--ink-40);text-decoration:line-through;font-style:italic}
+.pos-arrow{font-family:var(--hand);color:var(--haldi);font-size:24px}
+.pos-is{font-family:var(--serif);font-weight:600;color:var(--ink)}
+.pos-deva{font-family:var(--deva);font-size:14px;color:var(--ink-40);margin-left:4px}
+
+/* ===== DOMAIN ===== */
+.domain-picks{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;margin-top:24px}
+.domain-pick{
+  padding:22px 24px;background:var(--cream);position:relative;
+  box-shadow:2px 3px 14px rgba(42,37,32,0.07);
+  min-width:190px;flex:1;transition:transform 0.3s;
+}
+.domain-pick:hover{transform:translateY(-4px)}
+.domain-pick.dp-fav{background:var(--haldi-light)}
+.domain-pick.dp-fav::before{content:'';position:absolute;top:-6px;right:-6px;width:24px;height:24px;border-radius:50%;background:var(--haldi)}
+.domain-pick .dp-name{font-family:var(--mono);font-size:20px;font-weight:600;margin-bottom:6px}
+.domain-pick .dp-why{font-family:var(--serif);font-size:15px;color:var(--ink-60);line-height:1.6}
+.domain-pick .dp-hand{font-family:var(--hand);font-size:16px;color:var(--kumkum);margin-top:8px;transform:rotate(-1deg);display:inline-block}
+
+/* ===== PREVIEW MOCKUP ===== */
+.preview{border-radius:10px;overflow:hidden;box-shadow:2px 4px 20px rgba(42,37,32,0.1);margin:24px 0}
+.preview-nav{display:flex;align-items:center;gap:14px;padding:12px 22px;background:var(--ink)}
+.preview-d{
+  width:24px;height:24px;border-radius:50%;border:1.5px solid var(--chandan);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--deva-serif);font-size:13px;font-weight:600;color:var(--chandan);
+}
+.preview-arrow{color:var(--haldi);font-weight:700;font-size:14px}
+.preview-nav-item{font-family:var(--mono);font-size:12px;color:var(--chandan);opacity:0.4}
+.preview-nav-item.active{opacity:1;font-weight:600}
+.preview-body{padding:28px 28px 36px;background:var(--cream)}
+.preview-hero-name{font-family:var(--hand);font-size:22px;color:var(--haldi);margin-bottom:4px}
+.preview-hero-deva{font-family:var(--deva-serif);font-size:14px;color:var(--ink-40);margin-left:6px}
+.preview-hero-title{font-family:var(--serif);font-size:clamp(22px,3vw,32px);font-weight:700;line-height:1.2;margin-bottom:6px}
+.preview-hero-sub{font-size:15px;color:var(--ink-60);line-height:1.6;max-width:480px;margin-bottom:22px;font-style:italic}
+.preview-post{padding:12px 0 12px 16px;position:relative;margin-bottom:6px}
+.preview-post::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:2px}
+.preview-post.pp-lab::before{background:var(--kumkum)}
+.preview-post.pp-class::before{background:var(--neel)}
+.preview-post-tag{font-family:var(--hand);font-size:15px}
+.pp-lab .preview-post-tag{color:var(--kumkum)}
+.pp-class .preview-post-tag{color:var(--neel)}
+.preview-post-title{font-family:var(--serif);font-size:16px;font-weight:600;margin:2px 0}
+.preview-post-excerpt{font-size:13px;color:var(--ink-60);line-height:1.5}
+
+/* ===== KOLAM DIVIDER ===== */
+.kolam-divider{text-align:center;padding:20px 0;position:relative}
+.kolam-divider svg{width:180px;height:40px;opacity:0.2}
+
+/* ===== MARIGOLD IMAGE ===== */
+.marigold-corner{position:fixed;bottom:-80px;right:-80px;pointer-events:none;z-index:1}
+.marigold-img{
+  width:500px;height:500px;object-fit:cover;
+  opacity:0.10;border-radius:50%;
+  animation:mg-breathe 8s ease-in-out infinite;
+}
+@keyframes mg-breathe{
+  0%,100%{transform:scale(1) rotate(0deg)}
+  50%{transform:scale(1.015) rotate(0.5deg)}
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  margin-top:40px;padding-top:20px;border-top:1.5px solid var(--ink-20);
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.footer-deva{font-family:var(--deva);font-size:15px;color:var(--ink-60)}
+.footer-hand{font-family:var(--hand);font-size:16px;color:var(--ink-40)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:700px){
+  body::before{width:32px}
+  .shell{padding:32px 16px 60px 52px}
+  .dir-tabs{flex-wrap:wrap}
+  .dir-tab{padding:8px 12px;font-size:11px}
+  .culture-grid{flex-direction:column}
+  .color-world{justify-content:center}
+  .domain-picks{flex-direction:column}
+  .margin-note{display:none}
+  .marigold-img{width:300px;height:300px}
+  .pos-line{flex-wrap:wrap;gap:8px}
+}
+</style>
+</head>
+<body>
+
+<!-- Marigold — real photo, soft, in the corner -->
+<div class="marigold-corner">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Tagetes_erecta_-_Akola%2C_India.jpg/600px-Tagetes_erecta_-_Akola%2C_India.jpg" alt="" class="marigold-img"/>
+</div>
+
+<div class="shell">
+
+<!-- ===== INTRO ===== -->
+<div class="intro" id="introBlock">
+
+  <!-- Compact bar (shown when shrunk) -->
+  <div class="intro-compact" onclick="expandIntro()">
+    <div class="d-mark">
+      <span class="d-circle">दी</span><span class="d-arrow">&rarr;</span>
+    </div>
+    <span class="compact-name">deeshi<span class="compact-deva">दीशी</span></span>
+    <span class="compact-sep"></span>
+    <span class="compact-tagline">what is the human's job when AI does the work?</span>
+  </div>
+
+  <!-- Full intro (shown by default) -->
+  <div class="intro-full">
+    <div class="d-mark">
+      <span class="d-circle">दी</span><span class="d-arrow">&rarr;</span>
+    </div>
+    <span class="deva-hello">नमस्ते</span>
+    <h1>
+      <span class="hi-deeshi">hi, i'm deeshi &nbsp; दीशी</span>
+      What survives<br>compression?
+    </h1>
+    <p class="sub">
+      A <em>UX researcher</em> and <em>parent</em> asking the same question in two places:
+      what is the human's job when AI does the work?
+    </p>
+    <div class="culture-anchor">
+      <p>
+        <strong>Culture is not decoration in my work — it's methodology.</strong>
+        I build products and research frameworks shaped by the context they serve.
+        A worksheet for a child in Karnataka is not the same problem as one in Kansas.
+        The judgment layer is always cultural.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== TABS ===== -->
+<div class="dir-tabs" id="dirTabs">
+  <button class="dir-tab active" data-dir="thread" onclick="showDir('thread')"><span class="tab-deva">सूत्र</span> the thread</button>
+  <button class="dir-tab" data-dir="culture" onclick="showDir('culture')"><span class="tab-deva">संस्कृति</span> culture</button>
+  <button class="dir-tab" data-dir="streams" onclick="showDir('streams')"><span class="tab-deva">धाराएँ</span> streams</button>
+  <button class="dir-tab" data-dir="colors" onclick="showDir('colors')"><span class="tab-deva">रंग</span> colors</button>
+  <button class="dir-tab" data-dir="type" onclick="showDir('type')"><span class="tab-deva">अक्षर</span> typography</button>
+  <button class="dir-tab" data-dir="arch" onclick="showDir('arch')"><span class="tab-deva">ढाँचा</span> architecture</button>
+</div>
+
+<!-- ============================================ -->
+<!-- PANEL 1: THE THREAD                          -->
+<!-- ============================================ -->
+<div class="dir-panel visible" id="dir-thread">
+
+  <div class="section-marker">
+    <span class="sm-hindi">सूत्र</span>
+    <span class="sm-english">the thread that connects everything</span>
+  </div>
+
+  <div class="thesis-block">
+    <p class="thesis-text">
+      Whether you're a researcher encoding <span class="ul-haldi">editorial judgment</span> into AI &mdash;
+      or a parent encoding <span class="ul-haldi">pedagogical values</span> into a worksheet tool &mdash;
+      the quality of the output depends on the <strong>quality of the human judgment</strong> that shaped it.
+    </p>
+    <span class="thesis-deva">जो बचता है, वही मायने रखता है।</span>
+    <span class="thesis-annotation">^ same question, two kitchens</span>
+  </div>
+
+  <!-- Site preview mockup -->
+  <div class="preview">
+    <div class="preview-nav">
+      <div class="preview-d">दी</div>
+      <span class="preview-arrow">&rarr;</span>
+      <span class="preview-nav-item active">writing</span>
+      <span class="preview-nav-item">projects</span>
+      <span class="preview-nav-item">services</span>
+      <span class="preview-nav-item">about</span>
+    </div>
+    <div class="preview-body">
+      <div class="preview-hero-name">hi, i'm deeshi <span class="preview-hero-deva">दीशी</span></div>
+      <div class="preview-hero-title">What survives compression?</div>
+      <div class="preview-hero-sub">A UX researcher and parent asking what the human's job is when AI does the work.</div>
+      <div class="preview-post pp-lab">
+        <div class="preview-post-tag">the lab</div>
+        <div class="preview-post-title">The Judgment Layer</div>
+        <div class="preview-post-excerpt">What happens when editorial judgment is encoded into AI?</div>
+      </div>
+      <div class="preview-post pp-class">
+        <div class="preview-post-tag">the classroom</div>
+        <div class="preview-post-title">Every Worksheet Tool Asks the Wrong Question</div>
+        <div class="preview-post-excerpt">They ask for grade level. They should ask how your child learns.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PANEL 2: CULTURE                             -->
+<!-- ============================================ -->
+<div class="dir-panel" id="dir-culture">
+
+  <div class="section-marker">
+    <span class="sm-hindi">संस्कृति</span>
+    <span class="sm-english">culture as method, not ornament</span>
+  </div>
+
+  <h2 class="panel-h2">The judgment layer is always cultural.</h2>
+  <p class="panel-sub">Products built without cultural context produce culturally tone-deaf outputs. This isn't about localization — it's about the assumptions baked into every design decision, every AI instruction, every evaluation rubric.</p>
+
+  <div class="culture-grid">
+    <div class="culture-concept">
+      <div class="cc-deva">परख</div>
+      <div class="cc-transliterate">parakh</div>
+      <div class="cc-meaning">Evaluation. Discernment. Testing something against your own judgment.</div>
+      <div class="cc-maps-to">&rarr; the lab: AI evaluation</div>
+    </div>
+    <div class="culture-concept">
+      <div class="cc-deva">शिक्षा</div>
+      <div class="cc-transliterate">shiksha</div>
+      <div class="cc-meaning">Education. Discipline. The act of shaping understanding.</div>
+      <div class="cc-maps-to">&rarr; the classroom: pedagogy</div>
+    </div>
+    <div class="culture-concept">
+      <div class="cc-deva">विवेक</div>
+      <div class="cc-transliterate">vivek</div>
+      <div class="cc-meaning">The wisdom to distinguish between what is right and what merely looks right.</div>
+      <div class="cc-maps-to">&rarr; the judgment layer itself</div>
+    </div>
+    <div class="culture-concept">
+      <div class="cc-deva">सोच</div>
+      <div class="cc-transliterate">soch</div>
+      <div class="cc-meaning">Thought. The deliberate act of sitting with a problem before moving.</div>
+      <div class="cc-maps-to">&rarr; work-in-progress, always</div>
+    </div>
+  </div>
+
+  <div class="kolam-divider" style="margin-top:32px">
+    <svg viewBox="0 0 400 60" fill="none" stroke="currentColor" stroke-width="1.2">
+      <circle cx="200" cy="30" r="4"/><circle cx="160" cy="30" r="3"/><circle cx="240" cy="30" r="3"/>
+      <circle cx="120" cy="30" r="2.5"/><circle cx="280" cy="30" r="2.5"/>
+      <circle cx="180" cy="12" r="2.5"/><circle cx="220" cy="12" r="2.5"/>
+      <circle cx="180" cy="48" r="2.5"/><circle cx="220" cy="48" r="2.5"/>
+      <path d="M160 30 Q180 8 200 30 Q220 52 240 30" stroke-dasharray="3 3"/>
+      <path d="M160 30 Q180 52 200 30 Q220 8 240 30" stroke-dasharray="3 3"/>
+      <path d="M120 30 Q140 20 160 30" stroke-dasharray="2 3"/>
+      <path d="M240 30 Q260 40 280 30" stroke-dasharray="2 3"/>
+    </svg>
+  </div>
+
+  <div style="max-width:560px;margin-top:8px">
+    <div class="pos-line"><span class="pos-not">localized</span><span class="pos-arrow">&rarr;</span><span class="pos-is">culturally native</span><span class="pos-deva">अपनी ज़मीन</span></div>
+    <div class="pos-line"><span class="pos-not">decoration</span><span class="pos-arrow">&rarr;</span><span class="pos-is">methodology</span><span class="pos-deva">विधि</span></div>
+    <div class="pos-line"><span class="pos-not">Bollywood palette</span><span class="pos-arrow">&rarr;</span><span class="pos-is">materials from the kitchen</span><span class="pos-deva">मसाले</span></div>
+  </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PANEL 3: STREAMS                             -->
+<!-- ============================================ -->
+<div class="dir-panel" id="dir-streams">
+
+  <div class="section-marker">
+    <span class="sm-hindi">दो धाराएँ</span>
+    <span class="sm-english">two streams, one current</span>
+  </div>
+
+  <h2 class="panel-h2">Not two blogs. Two expressions of one obsession.</h2>
+  <p class="panel-sub">The Lab is where you test. The Classroom is where you raise. Both ask: what did the human actually contribute?</p>
+
+  <div class="stream-current stream-lab">
+    <div class="stream-name-deva">प्रयोगशाला</div>
+    <div class="stream-name">the lab</div>
+    <div class="stream-desc">Research, AI judgment, editorial architecture. What happens when you encode your thinking into a machine's instructions?</div>
+    <div class="stream-topics">
+      <span class="stream-topic">#judgment-layer</span><span class="stream-topic">#methodology</span>
+      <span class="stream-topic">#ai-evaluation</span><span class="stream-topic">#compression</span>
+    </div>
+  </div>
+
+  <div class="stream-connector">एक ही सवाल, अलग दाँव &mdash; same question, different stakes &darr;</div>
+
+  <div class="stream-current stream-class">
+    <div class="stream-name-deva">कक्षा</div>
+    <div class="stream-name">the classroom</div>
+    <div class="stream-desc">Education, pedagogy, AI tools for parents and kids. What happens when your child's learning is shaped by a tool that doesn't know how they learn?</div>
+    <div class="stream-topics">
+      <span class="stream-topic">#pedagogy</span><span class="stream-topic">#worksheets</span>
+      <span class="stream-topic">#boards</span><span class="stream-topic">#parenting</span><span class="stream-topic">#shiksha</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PANEL 4: COLORS                              -->
+<!-- ============================================ -->
+<div class="dir-panel" id="dir-colors">
+
+  <div class="section-marker">
+    <span class="sm-hindi">रंग</span>
+    <span class="sm-english">color — named after what they are</span>
+  </div>
+
+  <h2 class="panel-h2">Not hex codes. Materials.</h2>
+  <p class="panel-sub">Turmeric smeared on a threshold. Vermillion in a parting. Indigo drying in a Rajasthani courtyard. Clay under fingernails. Henna on a palm.</p>
+
+  <div class="color-world">
+    <div class="color-drop"><div class="color-blob" style="background:var(--chandan)"><span class="blob-label" style="--rot:2deg">चंदन</span></div><div class="color-hindi">चंदन</div><div class="color-english">Sandalwood</div><div class="color-hex">#e8dcc8</div><div class="color-meaning">calm, the page</div></div>
+    <div class="color-drop"><div class="color-blob" style="background:var(--ink)"><span class="blob-label" style="color:var(--cream);--rot:-3deg">स्याही</span></div><div class="color-hindi">स्याही</div><div class="color-english">Ink</div><div class="color-hex">#2a2520</div><div class="color-meaning">the written word</div></div>
+    <div class="color-drop"><div class="color-blob" style="background:var(--haldi)"><span class="blob-label" style="--rot:4deg">हल्दी</span></div><div class="color-hindi">हल्दी</div><div class="color-english">Turmeric</div><div class="color-hex">#d49520</div><div class="color-meaning">auspicious, foundational</div></div>
+    <div class="color-drop"><div class="color-blob" style="background:var(--kumkum)"><span class="blob-label" style="color:var(--cream);--rot:-2deg">कुमकुम</span></div><div class="color-hindi">कुमकुम</div><div class="color-english">Vermillion</div><div class="color-hex">#c25040</div><div class="color-meaning">the mark, annotation</div></div>
+    <div class="color-drop"><div class="color-blob" style="background:var(--neel)"><span class="blob-label" style="color:var(--cream);--rot:3deg">नील</span></div><div class="color-hindi">नील</div><div class="color-english">Indigo</div><div class="color-hex">#16606e</div><div class="color-meaning">depth, the classroom</div></div>
+    <div class="color-drop"><div class="color-blob" style="background:var(--mitti)"><span class="blob-label" style="--rot:-4deg">मिट्टी</span></div><div class="color-hindi">मिट्टी</div><div class="color-english">Clay</div><div class="color-hex">#a87d56</div><div class="color-meaning">grounding, earth</div></div>
+    <div class="color-drop"><div class="color-blob" style="background:var(--mehendi)"><span class="blob-label" style="color:var(--cream);--rot:2deg">मेहँदी</span></div><div class="color-hindi">मेहँदी</div><div class="color-english">Henna</div><div class="color-hex">#4d7a53</div><div class="color-meaning">growth, patience</div></div>
+    <div class="color-drop"><div class="color-blob" style="background:var(--sindoor)"><span class="blob-label" style="color:var(--cream);--rot:-3deg">सिंदूर</span></div><div class="color-hindi">सिंदूर</div><div class="color-english">Sindoor</div><div class="color-hex">#b83228</div><div class="color-meaning">sacred, emphasis</div></div>
+  </div>
+
+  <div class="color-story">
+    <p><span class="cs-h">हल्दी (Haldi)</span> is foundational warmth — the turmeric on a doorstep, marking beginnings.</p>
+    <p><span class="cs-k">कुमकुम (Kumkum)</span> is the analytical mark — "I was here, I noticed this, this matters."</p>
+    <p><span class="cs-n">नील (Neel)</span> is depth and learning — the indigo that takes time to set.</p>
+    <p><span class="cs-m">मिट्टी (Mitti)</span> is where you come from — clay, earth, grounding every abstraction.</p>
+    <p><span class="cs-me">मेहँदी (Mehendi)</span> is patience — the henna that darkens slowly, like real learning.</p>
+  </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PANEL 5: TYPOGRAPHY                          -->
+<!-- ============================================ -->
+<div class="dir-panel" id="dir-type">
+
+  <div class="section-marker">
+    <span class="sm-hindi">अक्षर</span>
+    <span class="sm-english">typeface alternates — pick your voice</span>
+  </div>
+
+  <h2 class="panel-h2">English thinks. Devanagari grounds. Handwriting interrupts. Mono labels.</h2>
+  <p class="panel-sub">Each pairing changes the personality of the page.</p>
+
+  <div class="type-alternates">
+
+    <!-- ENGLISH SERIF -->
+    <div class="type-alt-group">
+      <div class="type-alt-label">English Serif — your primary thinking voice</div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Source Serif 4</div>
+        <div class="type-alt-sample" style="font-family:'Source Serif 4',serif">What survives compression is what you chose to protect.</div>
+        <div class="type-alt-body" style="font-family:'Source Serif 4',serif">I gave Claude the same task twice. Both outputs found everything. The difference only showed up when I forced them to choose.</div>
+        <div class="type-alt-note">clean, modern serif. scholarly but not stuffy.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Literata</div>
+        <div class="type-alt-sample" style="font-family:'Literata',serif">What survives compression is what you chose to protect.</div>
+        <div class="type-alt-body" style="font-family:'Literata',serif">I gave Claude the same task twice. Both outputs found everything. The difference only showed up when I forced them to choose.</div>
+        <div class="type-alt-note">designed for long reading. warmer, slightly rounder. feels like a well-made book.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Crimson Pro <span class="rec-badge">CHOSEN</span></div>
+        <div class="type-alt-sample" style="font-family:'Crimson Pro',serif">What survives compression is what you chose to protect.</div>
+        <div class="type-alt-body" style="font-family:'Crimson Pro',serif">I gave Claude the same task twice. Both outputs found everything. The difference only showed up when I forced them to choose.</div>
+        <div class="type-alt-note">elegant, high-contrast. more editorial/magazine. slightly dramatic.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">EB Garamond</div>
+        <div class="type-alt-sample" style="font-family:'EB Garamond',serif">What survives compression is what you chose to protect.</div>
+        <div class="type-alt-body" style="font-family:'EB Garamond',serif">I gave Claude the same task twice. Both outputs found everything. The difference only showed up when I forced them to choose.</div>
+        <div class="type-alt-note">classical. the most "printed book" feeling. timeless but can read as old.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Cormorant Garamond</div>
+        <div class="type-alt-sample" style="font-family:'Cormorant Garamond',serif">What survives compression is what you chose to protect.</div>
+        <div class="type-alt-body" style="font-family:'Cormorant Garamond',serif">I gave Claude the same task twice. Both outputs found everything. The difference only showed up when I forced them to choose.</div>
+        <div class="type-alt-note">tall, graceful, high contrast. stunning at display sizes. very distinctive.</div>
+      </div>
+    </div>
+
+    <!-- HANDWRITING -->
+    <div class="type-alt-group">
+      <div class="type-alt-label">Handwriting — your margin scribbler</div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Kalam <span class="rec-badge">RECOMMENDED</span></div>
+        <div class="type-alt-sample" style="font-family:'Kalam',cursive;font-size:clamp(20px,2.8vw,28px)">wait, these are not the same —</div>
+        <div class="type-alt-body" style="font-family:'Kalam',cursive;font-size:18px;color:var(--ink-80)">the part that makes me slightly uncomfortable ^ this is where the insight lives</div>
+        <div class="type-alt-note">designed by Indian Type Foundry. feels like actual Indian handwriting. culturally authentic.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Caveat <span class="current-badge">CURRENT ALT</span></div>
+        <div class="type-alt-sample" style="font-family:'Caveat',cursive;font-size:clamp(20px,2.8vw,28px)">wait, these are not the same —</div>
+        <div class="type-alt-body" style="font-family:'Caveat',cursive;font-size:18px;color:var(--ink-80)">the part that makes me slightly uncomfortable ^ this is where the insight lives</div>
+        <div class="type-alt-note">lighter, more casual. works well but feels more Western/generic.</div>
+      </div>
+    </div>
+
+    <!-- DEVANAGARI -->
+    <div class="type-alt-group">
+      <div class="type-alt-label">Devanagari — the voice of home</div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Noto Serif Devanagari</div>
+        <div class="type-alt-sample" style="font-family:'Noto Serif Devanagari',serif">जो बचता है, वही मायने रखता है।</div>
+        <div class="type-alt-body" style="font-family:'Noto Serif Devanagari',serif;font-size:18px;color:var(--ink-80)">परख &middot; शिक्षा &middot; विवेक &middot; सोच &middot; दृष्टि</div>
+        <div class="type-alt-note">clean, authoritative serif. pairs beautifully with Source Serif.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Tiro Devanagari Hindi</div>
+        <div class="type-alt-sample" style="font-family:'Tiro Devanagari Hindi',serif">जो बचता है, वही मायने रखता है।</div>
+        <div class="type-alt-body" style="font-family:'Tiro Devanagari Hindi',serif;font-size:18px;color:var(--ink-80)">परख &middot; शिक्षा &middot; विवेक &middot; सोच &middot; दृष्टि</div>
+        <div class="type-alt-note">traditional calligraphic feel. more "literary Hindi." gorgeous at large sizes.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Martel</div>
+        <div class="type-alt-sample" style="font-family:'Martel',serif">जो बचता है, वही मायने रखता है।</div>
+        <div class="type-alt-body" style="font-family:'Martel',serif;font-size:18px;color:var(--ink-80)">परख &middot; शिक्षा &middot; विवेक &middot; सोच &middot; दृष्टि</div>
+        <div class="type-alt-note">designed specifically for Hindi web reading. excellent at body sizes. warm and grounded.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Yatra One</div>
+        <div class="type-alt-sample" style="font-family:'Yatra One',serif">जो बचता है, वही मायने रखता है।</div>
+        <div class="type-alt-body" style="font-family:'Yatra One',serif;font-size:18px;color:var(--ink-80)">परख &middot; शिक्षा &middot; विवेक &middot; सोच</div>
+        <div class="type-alt-note">bold, display-only. dramatic for section headers. too heavy for body text.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Baloo 2 <span class="rec-badge">CHOSEN</span></div>
+        <div class="type-alt-sample" style="font-family:'Baloo 2',sans-serif">जो बचता है, वही मायने रखता है।</div>
+        <div class="type-alt-body" style="font-family:'Baloo 2',sans-serif;font-size:18px;color:var(--ink-80)">परख &middot; शिक्षा &middot; विवेक &middot; सोच &middot; दृष्टि</div>
+        <div class="type-alt-note">rounded, friendly, sans-serif. could work for the classroom stream. approachable.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Khand</div>
+        <div class="type-alt-sample" style="font-family:'Khand',sans-serif">जो बचता है, वही मायने रखता है।</div>
+        <div class="type-alt-body" style="font-family:'Khand',sans-serif;font-size:18px;color:var(--ink-80)">परख &middot; शिक्षा &middot; विवेक &middot; सोच &middot; दृष्टि</div>
+        <div class="type-alt-note">condensed, geometric. modern/tech feel. good for labels and navigation.</div>
+      </div>
+    </div>
+
+    <!-- MONO -->
+    <div class="type-alt-group">
+      <div class="type-alt-label">Mono — your label maker</div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">IBM Plex Mono <span class="current-badge">CURRENT</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-60);margin-bottom:4px">The Lab &middot; March 2026 &middot; 8 min read</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink-60)">#judgment-layer &nbsp;&nbsp; #methodology &nbsp;&nbsp; #compression</div>
+        <div class="type-alt-note">humanist mono. warm for a monospace. pairs well with serif.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">JetBrains Mono</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-60);margin-bottom:4px">The Lab &middot; March 2026 &middot; 8 min read</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-60)">#judgment-layer &nbsp;&nbsp; #methodology &nbsp;&nbsp; #compression</div>
+        <div class="type-alt-note">taller, more open. slightly more technical. excellent ligatures.</div>
+      </div>
+
+      <div class="type-alt-row">
+        <div class="type-alt-name">Space Mono</div>
+        <div style="font-family:'Space Mono',monospace;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-60);margin-bottom:4px">The Lab &middot; March 2026 &middot; 8 min read</div>
+        <div style="font-family:'Space Mono',monospace;font-size:13px;color:var(--ink-60)">#judgment-layer &nbsp;&nbsp; #methodology &nbsp;&nbsp; #compression</div>
+        <div class="type-alt-note">quirky, geometric. more personality. could feel too playful for lab content.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PANEL 6: ARCHITECTURE                        -->
+<!-- ============================================ -->
+<div class="dir-panel" id="dir-arch">
+
+  <div class="section-marker">
+    <span class="sm-hindi">ढाँचा</span>
+    <span class="sm-english">information architecture</span>
+  </div>
+
+  <h2 class="panel-h2">Five places. That's it.</h2>
+
+  <div class="ia-flow">
+    <div class="ia-node ia-home"><div class="ia-page"><span class="ia-page-name">/ home</span><span class="ia-page-deva">घर</span></div><div class="ia-desc">Who you are in one breath. Latest from both streams. Featured project. Services.</div></div>
+    <div class="ia-node ia-writing"><div class="ia-page"><span class="ia-page-name">/writing</span><span class="ia-page-deva">लेख</span></div><div class="ia-desc">All posts, filterable by stream and tags. The center of gravity.</div></div>
+    <div class="ia-node ia-projects"><div class="ia-page"><span class="ia-page-name">/projects</span><span class="ia-page-deva">प्रयोग</span></div><div class="ia-desc">Visual essays and interactive research. The things that take months.</div></div>
+    <div class="ia-node ia-services"><div class="ia-page"><span class="ia-page-name">/services</span><span class="ia-page-deva">सेवाएँ</span></div><div class="ia-desc">Research visualization. AI workflow design. Education content consulting.</div></div>
+    <div class="ia-node ia-about"><div class="ia-page"><span class="ia-page-name">/about</span><span class="ia-page-deva">परिचय</span></div><div class="ia-desc">The person behind the दी→. UX researcher. Parent. Bengaluru.</div></div>
+  </div>
+
+  <div class="kolam-divider" style="margin-top:24px">
+    <svg viewBox="0 0 400 60" fill="none" stroke="currentColor" stroke-width="1.2">
+      <circle cx="200" cy="30" r="4"/><circle cx="140" cy="30" r="3"/><circle cx="260" cy="30" r="3"/>
+      <circle cx="170" cy="14" r="2.5"/><circle cx="230" cy="14" r="2.5"/>
+      <circle cx="170" cy="46" r="2.5"/><circle cx="230" cy="46" r="2.5"/>
+      <path d="M140 30 Q170 6 200 30 Q230 54 260 30" stroke-dasharray="3 3"/>
+      <path d="M140 30 Q170 54 200 30 Q230 6 260 30" stroke-dasharray="3 3"/>
+    </svg>
+  </div>
+
+  <div style="margin-top:8px">
+    <div style="font-family:var(--hand);font-size:20px;color:var(--haldi);margin-bottom:16px;transform:rotate(-1deg);display:inline-block">what this is and isn't &darr;</div>
+    <div class="positioning-flow">
+      <div class="pos-line"><span class="pos-not">tech blog</span><span class="pos-arrow">&rarr;</span><span class="pos-is">research notebook</span><span class="pos-deva">शोध पत्रिका</span></div>
+      <div class="pos-line"><span class="pos-not">parenting influencer</span><span class="pos-arrow">&rarr;</span><span class="pos-is">parent who researches</span></div>
+      <div class="pos-line"><span class="pos-not">portfolio</span><span class="pos-arrow">&rarr;</span><span class="pos-is">body of work</span><span class="pos-deva">कृतियाँ</span></div>
+      <div class="pos-line"><span class="pos-not">thought leader</span><span class="pos-arrow">&rarr;</span><span class="pos-is">practitioner with a question</span></div>
+      <div class="pos-line"><span class="pos-not">localized</span><span class="pos-arrow">&rarr;</span><span class="pos-is">culturally native</span><span class="pos-deva">अपनी ज़मीन</span></div>
+    </div>
+  </div>
+
+  <div class="kolam-divider">
+    <svg viewBox="0 0 400 60" fill="none" stroke="currentColor" stroke-width="1.2">
+      <circle cx="200" cy="30" r="4"/><circle cx="160" cy="30" r="3"/><circle cx="240" cy="30" r="3"/>
+      <circle cx="120" cy="30" r="2.5"/><circle cx="280" cy="30" r="2.5"/>
+      <path d="M120 30 Q140 20 160 30" stroke-dasharray="2 3"/>
+      <path d="M160 30 Q180 8 200 30 Q220 52 240 30" stroke-dasharray="3 3"/>
+      <path d="M240 30 Q260 40 280 30" stroke-dasharray="2 3"/>
+    </svg>
+  </div>
+
+  <div style="font-family:var(--hand);font-size:20px;color:var(--haldi);margin-bottom:16px;transform:rotate(-1deg);display:inline-block">your name is your most durable asset &darr;</div>
+  <div class="domain-picks">
+    <div class="domain-pick dp-fav"><div class="dp-name">deeshi.co</div><div class="dp-why">Short. Warm. The दी→ mark becomes a natural logo. Your name in two scripts, one identity.</div><div class="dp-hand">chosen — दीशी &check;</div></div>
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <div class="d-mark"><span class="d-circle" style="width:28px;height:28px;font-size:15px">दी</span><span class="d-arrow" style="font-size:16px">&rarr;</span></div>
+  <div>
+    <div class="footer-deva">मूडबोर्ड &middot; संस्करण ७ &middot; मार्च २०२६</div>
+    <div class="footer-hand">moodboard v7 &middot; v6 architecture + v4 palette &middot; combined</div>
+  </div>
+</div>
+
+</div>
+
+<script>
+var introShrunk = false;
+
+function showDir(id){
+  document.querySelectorAll('.dir-panel').forEach(function(p){p.classList.remove('visible')});
+  document.querySelectorAll('.dir-tab').forEach(function(t){t.classList.remove('active')});
+  var panel=document.getElementById('dir-'+id);
+  if(panel)panel.classList.add('visible');
+  var tab=document.querySelector('[data-dir="'+id+'"]');
+  if(tab)tab.classList.add('active');
+
+  // Shrink intro on tab click
+  if(!introShrunk){
+    document.getElementById('introBlock').classList.add('shrunk');
+    introShrunk = true;
+  }
+
+  // Scroll tabs into view so content panel is at top
+  setTimeout(function(){
+    document.getElementById('dirTabs').scrollIntoView({behavior:'smooth',block:'start'});
+  }, 80);
+}
+
+function expandIntro(){
+  document.getElementById('introBlock').classList.remove('shrunk');
+  introShrunk = false;
+  // Scroll to top
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
