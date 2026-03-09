@@ -373,27 +373,50 @@ When writing blog content for deeshi.co:
 
 ---
 
+## MANDATORY: On Every Skill Invocation
+
+**EVERY TIME this skill is triggered — no exceptions — start by displaying this template menu and moodboard link BEFORE doing anything else:**
+
+---
+
+**deeshi.co — visual language system**
+**दी→** | [Open Moodboard v7 (live reference)](file:///Users/deepshikhabhardwaj/Documents/Claude%20folder%202026/site-moodboard-v7-combined.html)
+
+Which templates do you want to use?
+
+| # | Template | Hindi | What it does |
+|---|---|---|---|
+| 1 | **SUTRA** | सूत्र | Thesis banner — gradient-bordered central argument |
+| 2 | **PARAKH** | परख | Concept grid — Hindi concepts with color-coded borders |
+| 3 | **DHARA** | धारा | Stream card — lab/classroom content label with tags |
+| 4 | **SEEDI** | सीढ़ी | Positioning ladder — "not this → but this" |
+| 5 | **RANG** | रंग | Color narrative — cultural color names inline |
+| 6 | **CHINHA** | चिह्न | Section marker — bilingual header with gradient line |
+| 7 | **NEEM** | नींव | Culture anchor — tricolor-bordered callout |
+| 8 | **KOLAM** | कोलम | Section divider — SVG dot pattern |
+| 9 | **DARSHAN** | दर्शन | Site preview mockup |
+| 10 | **TIPPANI** | टिप्पणी | Margin note — handwritten aside |
+| 11 | **NAKSHA** | नक्शा | IA tree — vertical node map |
+| 12 | **PATTI** | पट्टी | Brand card — elevated recommendation card |
+
+Want me to open the moodboard for reference? (y/n)
+
+---
+
+**Then offer to open the moodboard file** using: `open "/Users/deepshikhabhardwaj/Documents/Claude folder 2026/site-moodboard-v7-combined.html"`
+
+**Wait for the user to pick templates before proceeding.**
+
+---
+
 ## Process: Creating a Blog Entry
 
-When the user asks to create a blog entry for deeshi.co:
+After the user selects templates:
 
 1. **Identify the stream:** Is this The Lab or The Classroom?
-2. **Ask which templates** from the list above the user wants to use. Present the template names with one-line descriptions:
-   - SUTRA (thesis banner)
-   - PARAKH (concept grid)
-   - DHARA (stream card)
-   - SEEDI (positioning ladder)
-   - RANG (color narrative)
-   - CHINHA (section marker)
-   - NEEM (culture anchor)
-   - KOLAM (section divider)
-   - DARSHAN (site preview)
-   - TIPPANI (margin note)
-   - NAKSHA (IA tree)
-   - PATTI (brand card)
-3. **Generate the HTML** using the chosen templates, the color palette, the typography system, and the cultural elements documented above.
-4. **Apply the voice rules** — write in Deeshi's voice, not generic blog voice.
-5. **Include stream-appropriate colors** — kumkum borders for lab posts, neel borders for classroom posts.
+2. **Generate the HTML** using the chosen templates, the color palette, the typography system, and the cultural elements documented above.
+3. **Apply the voice rules** — write in Deeshi's voice, not generic blog voice.
+4. **Include stream-appropriate colors** — kumkum borders for lab posts, neel borders for classroom posts.
 
 ---
 
